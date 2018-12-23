@@ -1,0 +1,29 @@
+
+html {
+    font-size: 46px;
+}
+
+.pager-contents{
+    border-width: 1px;
+    border-style: solid;
+}
+
+.pager > div > ul {
+    margin: 0;
+    padding: 0;
+}
+.pager > .contents-wrap, 
+.pager > .contents-wrap .pager-contents{
+    display: inline-block;
+}
+
+.pager .pager-contents:hover {
+    background-color: rgba(0,155,255,0.8);
+    color: white;
+    cursor: pointer;
+}
+
+.pager > .contents-wrap > .page-nums > .selected {
+    background-color: #0000FF;
+    color: #FFFFFF;
+}
