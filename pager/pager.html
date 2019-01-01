@@ -1,46 +1,74 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <title>pager-sample</title>
-        <link rel="stylesheet" type="text/css" href="css/pager.css">
-        <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-        <script type="text/javascript" src="js/pager.js"></script>
-     </head>
-    <body>
+
+<head>
+    <meta charset="utf-8">
+    <title>pager-sample</title>
+    <link rel="stylesheet" type="text/css" href="css/pager.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/pager.js"></script>
+</head>
+
+<body>
+    <h1>ページャーサンプル</h1>
+    <div class="select-option">
+        <div class="select-data">
+            <span>データ数:</span>
+            <select class="data-count">
+                <option>0</option>
+                <option selected>50</option>
+                <option>100</option>
+                <option>300</option>
+                <option>500</option>
+            </select>
+        </div>
+        <div class="select-data">
+            <span>1ページ当たりのデータ数:</span>
+            <select class='data-count-per-page'>
+                <option>10</option>
+                <option>30</option>
+                <option>50</option>
+            </select>
+        </div>
+        <div class="select-data">
+                <span>表示ページ数:</span>
+                <select class="display-page-count">
+                    <option>1</option>
+                    <option selected>3</option>
+                    <option>5</option>
+                    <option>10</option>
+                    <option>50</option>
+                </select>
+            </div>    
+    </div>
+    <div class="pager-wrap">
         <div class="pager">
             <div class="contents-wrap">
-                <span class="pager-contents page-back">&#x25C1;</span>
-            </div>
-            <div class="contents-wrap">
-                <ul class="page-nums">
-                    <li class="page-num pager-contents" num='1'>1</li>
-                    <li class="page-num pager-contents" num='2'>2</li>
-                    <li class="page-num pager-contents selected" num='3'>3</li>
-                    <li class="page-num pager-contents" num='4'>4</li>
-                    <li class="page-num pager-contents" num='5'>5</li>
+                <ul class="pager-contents-list">
+                    <li class="pager-contents page-back">&#x25C1;
+                    <li class="page-num pager-contents" num='1'>1
+                    <li class="page-num pager-contents" num='2'>2
+                    <li class="page-num pager-contents selected" num='3'>3
+                    <li class="page-num pager-contents" num='4'>4
+                    <li class="page-num pager-contents" num='5'>5
+                    <li class="pager-contents page-ejection">&#x25B7;
                 </ul>
-            </div>
-            <div class="contents-wrap">
-                <span class="pager-contents  page-ejection">&#x25B7;</span>
             </div>
         </div>
         <div class="pager">
             <div class="contents-wrap">
-                <span class="pager-contents page-back">&#x25C1;</span>
-            </div>
-            <div class="contents-wrap">
-                <ul class="page-nums">
-                    <li class="page-num pager-contents" num='1'>1</li>
-                    <li class="page-num pager-contents" num='2'>2</li>
-                    <li class="page-num pager-contents selected" num='3'>3</li>
-                    <li class="page-num pager-contents" num='4'>4</li>
-                    <li class="page-num pager-contents" num='5'>5</li>
+                <ul class="pager-contents-list">
+                    <li class="pager-contents page-back">&#x25C1;
+                    <li class="page-num pager-contents" num='1'>1
+                    <li class="page-num pager-contents" num='2'>2
+                    <li class="page-num pager-contents selected" num='3'>3
+                    <li class="page-num pager-contents" num='4'>4
+                    <li class="page-num pager-contents" num='5'>5
+                    <li class="pager-contents page-ejection">&#x25B7;
                 </ul>
             </div>
-            <div class="contents-wrap">
-                <span class="pager-contents  page-ejection">&#x25B7;</span>
-            </div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

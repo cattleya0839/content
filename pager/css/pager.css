@@ -1,7 +1,13 @@
 
 html {
-    font-size: 46px;
+    font-size: 16px;
 }
+
+.pager {
+    margin:10px;
+    font-size:36px;
+}
+
 
 .pager-contents{
     border-width: 1px;
@@ -15,7 +21,9 @@ html {
 .pager > .contents-wrap, 
 .pager > .contents-wrap .pager-contents{
     display: inline-block;
+    margin: 5px 10px;
 }
+
 
 .pager .pager-contents:hover {
     background-color: rgba(0,155,255,0.8);
@@ -23,7 +31,27 @@ html {
     cursor: pointer;
 }
 
-.pager > .contents-wrap > .page-nums > .selected {
+.pager > .contents-wrap > .pager-contents-list > .selected {
     background-color: #0000FF;
     color: #FFFFFF;
+}
+
+.select-option{
+    margin:10px;
+    font-size:24px;
+    display: flex;
+}
+
+.select-option select {
+    font-size: 16px;
+}
+
+.select-option select {
+    width:64px;
+    height:36px;
+    padding:5px;
+}
+
+.select-data {
+    margin:10px;
 }
